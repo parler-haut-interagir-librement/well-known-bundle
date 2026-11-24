@@ -1,6 +1,6 @@
 {
     "name": "phil/well-known-bundle",
-    "description": "The /.well-known/ addresses of a Symfony site: security.txt, change-password, WebFinger, NodeInfo, did:web, DID configuration, AT Protocol handle, app links, and documents of other bundles",
+    "description": "Serve the /.well-known/ addresses of a Symfony site, such as security.txt, change-password, WebFinger and NodeInfo, each turned on in configuration.",
     "license": "MIT",
     "type": "symfony-bundle",
     "keywords": [
@@ -40,7 +40,8 @@
         "symfony/framework-bundle": "^8.2"
     },
     "suggest": {
-        "phil/monitoring-bundle": "To check that the security.txt has not expired, and to be told before it does"
+        "phil/monitoring-bundle": "To check that the security.txt has not expired, and to be told before it does",
+        "phil/privacy-bundle": "To honour the Global Privacy Control, and state it at /.well-known/gpc.json"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
